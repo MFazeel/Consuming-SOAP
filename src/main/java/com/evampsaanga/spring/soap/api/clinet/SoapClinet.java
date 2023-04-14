@@ -5,8 +5,8 @@ import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.stereotype.Service;
 import org.springframework.ws.client.core.WebServiceTemplate;
 
-import com.javatechie.spring.soap.api.loaneligibility.Acknowledgement;
-import com.javatechie.spring.soap.api.loaneligibility.CustomerRequest;
+import com.evampsaanga.spring.soap.api.loaneligibility.Acknowledgement;
+import com.evampsaanga.spring.soap.api.loaneligibility.CustomerRequest;
 
 @Service
 public class SoapClinet {

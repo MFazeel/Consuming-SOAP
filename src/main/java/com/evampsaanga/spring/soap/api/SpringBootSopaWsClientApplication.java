@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.evampsaanga.spring.soap.api.clinet.SoapClinet;
-import com.javatechie.spring.soap.api.loaneligibility.Acknowledgement;
-import com.javatechie.spring.soap.api.loaneligibility.CustomerRequest;
+import com.evampsaanga.spring.soap.api.loaneligibility.Acknowledgement;
+import com.evampsaanga.spring.soap.api.loaneligibility.CustomerRequest;
 
 @SpringBootApplication
 @RestController
 public class SpringBootSopaWsClientApplication {
-	
+
 	@Autowired
 	private SoapClinet clinet;
-	
+
 	@PostMapping("/getLoanStatus")
 	public Acknowledgement invokeSoapClientToGetLoanStatus(@RequestBody CustomerRequest request) {
 		return clinet.getLoanStatus(request);
